@@ -36,6 +36,11 @@ const populateTodos = () => {
   }
 }
 
+const filterArrayOfTodos = () => {
+  const filterFunction = document.getElementById(numberInput).nodeValue;
+  arrayOfTodos1 = arrayOfTodos.filter(todo => todo.userId == filterFunction)
+}
+
 const arrayOfTodos1 = [
   {
   "userId": 14,
